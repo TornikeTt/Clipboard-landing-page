@@ -1,0 +1,76 @@
+.workflow_wrapper{
+    margin-top: 50px;
+    .workflow_header_text{
+        @include flex(column , none , center);
+        h1{
+            color: $Dark_Grayish_Blue;
+        }
+        p{
+            margin-top: 20px;
+            color: $Grayish_Blue;
+        }
+    }
+    .icone_And_text{
+        width: 80%;
+        @include flex(row, space-between , none);
+        margin: auto;
+        .i{
+            @include flex(column , center , center);
+            margin-top: 50px;
+            h3{
+                color:$Dark_Grayish_Blue;
+                margin-top: 50px;
+            }
+            p{
+                text-align: center;
+                width: 350px;
+                color:$Grayish_Blue;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .brends-images{
+        width: 80%;
+        @include flex(row , space-between, none);
+        margin:150px auto;
+        img{
+            width: 120px;
+        }
+    }
+
+    .Clipboard_And_buttons{
+        @include flex(column , none, center);
+        h1{
+            color:$Dark_Grayish_Blue;
+        }
+        p{
+            color:$Grayish_Blue;
+            margin-top: 20px;
+            width: 600px;
+            text-align: center;
+        }
+        .down_buttons{
+            margin-top: 30px;
+            .down_forIOS{
+                background-color:$Strong_Cyan;
+                width:190px;
+                height: 45px;
+                border-radius: 25px;
+                color:white;
+                font-size:14px;
+                perspective: 100rem;
+                cursor:pointer;
+                outline:none;
+                border:none;
+                margin-right: 8px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+            }
+            .down_forMac{
+                @extend .down_forIOS;
+                background-color: $Light_Blue;
+            }
+        }
+    }
+    
+}

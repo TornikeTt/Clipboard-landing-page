@@ -1,0 +1,46 @@
+header{
+    position:relative;
+    .header_background_image{
+        width: 100%;
+        position:absolute;
+    }
+    .about_History_copy{
+        @include flex(column , center , center);
+        img{
+            margin-top:80px;
+        }
+        h1{
+            margin-top:60px;
+            font-size:40px;
+            color:$Dark_Grayish_Blue
+        }
+        p{
+            margin-top:20px;
+            width: 580px;
+            text-align:center;
+            color:$Grayish_Blue;
+            line-height: 23px;
+        }
+        .header_buttons{
+            margin-top: 50px;
+            .forIOS{
+                background-color:$Strong_Cyan;
+                width:190px;
+                height: 45px;
+                border-radius: 25px;
+                color:white;
+                font-size:14px;
+                perspective: 100rem;
+                cursor:pointer;
+                outline:none;
+                border:none;
+                margin-right: 8px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+            }
+            .forMac{
+                @extend .forIOS;
+                background-color: $Light_Blue;
+            }
+        }
+    }
+}

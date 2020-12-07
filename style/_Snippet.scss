@@ -1,0 +1,43 @@
+.about_snippet_wrapper{
+    /*some text down of header about "snippets"*/
+    .snippet{
+        @include flex(column , none , center);
+        margin-top: 130px;
+        h1{
+            color:$Dark_Grayish_Blue;
+        }
+        p{
+            margin-top:20px;
+            width: 630px;
+            text-align:center;
+            color:$Grayish_Blue;
+            line-height: 23px;
+        }
+    }
+    /*computer image and text down of "snippet" */
+    .computerImage_And_text{
+        margin-top:60px;
+        width: 100%;
+        height: 600px;
+        overflow-x: hidden;
+        @include flex(row , none , none);
+        img{
+            margin-left: -40px;
+        }
+        .right_text{
+            .t{
+                margin-top: 70px;
+                margin-left: 100px;
+                h2{
+                    color:$Dark_Grayish_Blue;
+                }
+                p{
+                    color:$Grayish_Blue;
+                    width:332px;
+                    margin-top: 10px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

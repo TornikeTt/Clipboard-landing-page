@@ -1,0 +1,21 @@
+
+.Section_Clipboard_wrapper{
+    @include flex(column , none , center);
+    margin-top: 150px;
+    .text_About_clipborad{
+        @include flex(column, none , center);
+        h1{
+            color:$Dark_Grayish_Blue;
+        }
+        p{
+            width: 630px;
+            text-align: center;
+            margin-top: 20px;
+            color:$Grayish_Blue;
+        }
+    }
+    
+    img{
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,11 @@
+$Dark_Grayish_Blue: hsl(210, 10%, 33%);
+$Grayish_Blue:hsl(201, 11%, 66%);
+
+$Strong_Cyan:hsl(171, 66%, 44%);
+$Light_Blue: hsl(233, 100%, 69%);
+@mixin flex($direction , $justify, $align){
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

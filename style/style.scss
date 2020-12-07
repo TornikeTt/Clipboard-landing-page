@@ -1,0 +1,189 @@
+@import "./variablesAndMixin";
+@import "./Header";
+@import "./Snippet";
+@import "./Clipboard";
+@import "./Workflow";
+@import "./footer";
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.header_background_image_forMobile{
+    display:none;
+}
+
+@media (max-width: 375px){
+    header{
+        .header_background_image_forMobile{
+            display:inline;
+            position: absolute;
+            width:375px;
+        }
+        .about_History_copy{
+            h1{
+                font-size: 35px;
+                text-align: center;
+            }
+            p{
+                width: 320px;
+            }
+            .header_buttons{
+                margin-top: 30px;
+                @include flex(column , center , center);
+                .forIOS{
+                    width: 250px;
+                    margin-right: 0px;
+                }
+                .forMac{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+   
+    .about_snippet_wrapper{
+        .snippet{
+            h1{
+                text-align: center;
+            }
+            p{
+                width:300px;
+            }
+        }
+        .computerImage_And_text{
+            @include flex(column , center , center);
+            width:100%;
+            height: auto;
+            img{
+                width: 350px;
+                margin:0px;
+            }
+            .right_text{
+                text-align: center;
+                .t{
+                    margin-top: 50px;
+                    margin-left: 0px;
+                    p{
+                        width: 300px;
+                        line-height:23px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .Section_Clipboard_wrapper{
+        .text_About_clipborad{
+            h1{
+                text-align: center;
+            }
+            p{
+                width: 300px;
+            }
+        }
+        img{
+            width: 350px;
+        }
+    }
+
+
+    .workflow_wrapper{
+        .workflow_header_text{
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                width: 250px;
+            }
+        }
+
+        .icone_And_text{
+            @include flex(column, space-between , center);
+        }
+        .brends-images{
+            margin:20px auto;
+            @include flex(column, space-between , center);
+            img{
+                margin-top: 50px;
+            }
+        }
+
+        .Clipboard_And_buttons{
+            margin-top: 100px;
+            h1{
+                text-align: center;
+            }
+            p{
+                width: 320px;
+            }
+            .down_buttons{
+                margin-top: 30px;
+                @include flex(column , center , center);
+                .down_forIOS{
+                    width: 250px;
+                    margin-right: 0px;
+                }
+                .down_forMac{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    footer{
+        width:375px;
+        height:350px;
+        @include flex(column , none, none);
+        .q{
+            width: 80%;
+            margin:auto;
+            @include flex(column , none, none);
+        }
+        .info_logo{
+            @include flex(column , none, center);
+            .info{
+                width: 375px;
+                margin:0px;
+                .first-info{
+                    @include flex(column , none , none);
+                    margin-top: 20px;
+                    li{
+                        margin-top: 15px;
+                    }
+                }
+                .second-info{
+                    @include flex(column , none, none);
+                    margin:0px;
+                    text-align: center;
+                    .l{
+                        margin-left: 0px;
+                    }
+                    li{
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+        .social_media{
+            margin-top: 50px;
+        }
+    }
+
+
+
+
+
+
+
+
+    .header_background_image{
+        display:none;
+    }
+}
